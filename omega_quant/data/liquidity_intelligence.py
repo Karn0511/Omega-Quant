@@ -1,4 +1,5 @@
 # pylint: disable=import-error
+import os
 import logging
 import numpy as np  # type: ignore
 import ccxt  # type: ignore
@@ -11,9 +12,15 @@ class LiquidityIntelligence:
     def __init__(self, exchange_id: str = "binance"):
         """Auto-docstring."""
         self.exchange = getattr(ccxt, exchange_id)({"enableRateLimit": True})
+        self.is_github = os.getenv("GITHUB_ACTIONS", "false").lower() == "true"
+        if self.is_github:
+            LOGGER.info("Liquidity Cloud Fix: Order book scanning permanently disabled for serverless stability.")
 
     def fetch_order_book(self, symbol: str, limit: int = 100):
         """Auto-docstring."""
+        if self.is_github:
+            return None
+            
         try:
             return self.exchange.fetch_order_book(symbol.replace("/", ""), limit)
         except Exception as exc:

@@ -29,6 +29,11 @@ class MarketDataFetcher:
 
         exchange_cls = getattr(ccxt, self.exchange_name)
         self.exchange = exchange_cls({"enableRateLimit": True})
+        
+        # Permanent Cloud Fix: Detect GitHub Actions and enable fallbacks immediately
+        self.is_github = os.getenv("GITHUB_ACTIONS", "false").lower() == "true"
+        if self.is_github:
+            LOGGER.info("Permanent Cloud Fix: GitHub runner detected. Pre-engaging data fallbacks.")
 
     def _symbol_file(self, symbol: str) -> Path:
         """Auto-docstring."""
@@ -56,6 +61,12 @@ class MarketDataFetcher:
 
     def fetch_historical(self, symbol: str, since_days: int) -> pd.DataFrame:
         """Auto-docstring."""
+        # Permanent Cloud Fix: Force yfinance on GitHub to avoid any blocking delays
+        if self.is_github:
+            LOGGER.info("Cloud Mode: Using yfinance for %s (Binance block protection active)", symbol)
+            ticker = symbol.replace("/", "-").replace("USDT", "USD")
+            return self.fetch_stock_historical(ticker, since_days)
+
         since = datetime.now(timezone.utc) - timedelta(days=since_days)
         since_ms = int(since.timestamp() * 1000)
 

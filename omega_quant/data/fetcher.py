@@ -116,30 +116,26 @@ class MarketDataFetcher:
         if hist.empty:
             raise RuntimeError(f"No stock data fetched for {ticker}")
 
+        # Deep Flattening for yfinance 1.2.x+
         if isinstance(hist.columns, pd.MultiIndex):
-            # Flatten: (Metric, Ticker) -> Metric
-            hist.columns = [c[0].lower() for c in hist.columns]
+            hist.columns = hist.columns.get_level_values(0).str.lower()
         else:
             hist.columns = [str(c).lower() for c in hist.columns]
 
-        # Final safety: if yfinance gave us duplicate columns or different names
         hist = hist.rename(columns={"adj close": "close"})
-        
-        # Ensure we have a 1D Series for each column
-        for c in ["open", "high", "low", "close", "volume"]:
-            if c in hist.columns:
-                if isinstance(hist[c], pd.DataFrame):
-                    hist[c] = hist[c].iloc[:, 0]
-            else:
-                # If column is missing, try to find it (sometimes its capitalized)
-                pass
 
+        # Build clean output bit by bit to avoid MultiIndex/Duplicate column issues completely
+        out = pd.DataFrame(index=hist.index)
         needed = ["open", "high", "low", "close", "volume"]
-        missing = [c for c in needed if c not in hist.columns]
-        if missing:
-            raise ValueError(f"Stock data missing columns for {ticker}: {missing}")
+        
+        for col in needed:
+            if col in hist.columns:
+                data = hist[col]
+                # If plural columns (due to MultiIndex artifact), take the first one
+                out[col] = data.iloc[:, 0] if isinstance(data, pd.DataFrame) else data
+            else:
+                raise ValueError(f"YFinance data for {ticker} missing column: {col}")
 
-        out = hist[needed].copy()
         out["timestamp"] = pd.to_datetime(out.index, utc=True)
         out["symbol"] = ticker
         out = out.reset_index(drop=True)

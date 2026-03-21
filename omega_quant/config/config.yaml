@@ -1,0 +1,68 @@
+app:
+  name: OMEGA-QUANT
+  log_level: INFO
+  timezone: UTC
+
+data:
+  exchange: binance
+  crypto_symbols:
+    - BTC/USDT
+    - ETH/USDT
+  # stock_symbols:
+  #   - AAPL
+  #   - MSFT
+  timeframe: 1m
+  since_days: 60
+  limit: 1000
+  parquet_dir: omega_quant/data/parquet
+  stream_reconnect_seconds: 5
+
+features:
+  sequence_length: 60
+  prediction_horizon: 1
+  scaler_path: omega_quant/models/scaler.joblib
+  required_columns:
+    - open
+    - high
+    - low
+    - close
+    - volume
+
+model:
+  num_qubits: 8
+  q_layers: 4
+  conv_channels: 64
+  lstm_hidden: 128
+  dropout: 0.25
+  num_classes: 3
+
+training:
+  batch_size: 256
+  epochs: 10
+  learning_rate: 0.0005
+  train_split: 0.8
+  max_rows: 20000
+  checkpoint_dir: omega_quant/models/checkpoints
+  model_path: omega_quant/models/omega_quant_hybrid.pt
+
+strategy:
+  buy_threshold: 0.7
+  sell_threshold: 0.3
+  atr_window: 14
+  stop_loss_atr_mult: 1.5
+  take_profit_atr_mult: 2.5
+  trailing_stop_atr_mult: 1.0
+
+risk:
+  max_risk_per_trade: 0.02
+  max_daily_loss: 0.05
+  max_position_pct: 0.25
+
+execution:
+  paper_trading: true
+  fee_pct: 0.001
+  slippage_pct: 0.0005
+
+agent:
+  retrain_interval_minutes: 60
+  scan_interval_seconds: 15

@@ -1,0 +1,29 @@
+{
+    "best_band": [
+        0.7,
+        0.8
+    ],
+    "regime_stats": {
+        "Breakout": {
+            "profit_factor": 1.9736244729061112,
+            "expectancy": 7.935461949347484,
+            "win_rate": 0.631578947368421
+        },
+        "Mean_Reversion": {
+            "profit_factor": 1.8071804647573404,
+            "expectancy": 7.36995716273262,
+            "win_rate": 0.6153846153846154
+        },
+        "Trend": {
+            "profit_factor": 2.4110406718587782,
+            "expectancy": 9.83373002440199,
+            "win_rate": 0.6666666666666666
+        }
+    },
+    "edge_score": 867.7970456350545,
+    "final_alpha_score": 164.28854585627985,
+    "stability_multiplier": 0.1893167840137706,
+    "hard_generalization_guard": false,
+    "best_session": "US",
+    "last_updated": "2026-03-21T16:26:23.721341"
+}

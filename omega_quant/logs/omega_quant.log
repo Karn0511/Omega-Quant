@@ -1,0 +1,1476 @@
+2026-03-18 15:14:35 | INFO | omega_quant.data.fetcher | Saved 86401 rows to omega_quant\data\parquet\BTC_USDT_1m.parquet
+2026-03-18 15:16:07 | INFO | omega_quant.data.fetcher | Saved 86402 rows to omega_quant\data\parquet\BTC_USDT_1m.parquet
+2026-03-18 15:17:37 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.9673 train_acc=0.4570 valid_loss=0.9590 valid_acc=0.4562
+2026-03-18 15:19:29 | INFO | omega_quant.models.trainer | Epoch 2: train_loss=0.9574 train_acc=0.4556 valid_loss=0.9569 valid_acc=0.4566
+2026-03-18 15:21:31 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.8897 train_acc=0.4804 valid_loss=0.8160 valid_acc=0.4676
+2026-03-18 15:21:31 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant\models\omega_quant_hybrid.pt
+2026-03-18 15:21:35 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.9713 train_acc=0.4548 valid_loss=0.9587 valid_acc=0.4534
+2026-03-18 15:21:35 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant\models\omega_quant_hybrid.pt
+2026-03-18 15:21:58 | INFO | omega_quant.models.trainer | Epoch 3: train_loss=0.9556 train_acc=0.4593 valid_loss=0.9644 valid_acc=0.4554
+2026-03-18 15:22:09 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.9679 train_acc=0.4510 valid_loss=0.9584 valid_acc=0.4560
+2026-03-18 15:22:09 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant\models\omega_quant_hybrid.pt
+2026-03-18 15:22:23 | INFO | omega_quant.backtesting.bt_engine | Backtest completed: final_value=10000.00 profit_pct=0.00 sharpe=0.000 max_dd=0.00
+2026-03-18 15:22:23 | INFO | __main__ | Backtest results: profit=0.00% sharpe=0.0000 max_drawdown=0.00%
+2026-03-18 15:22:48 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.9698 train_acc=0.4526 valid_loss=0.9587 valid_acc=0.4523
+2026-03-18 15:22:48 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant\models\omega_quant_hybrid.pt
+2026-03-18 15:23:37 | INFO | omega_quant.models.trainer | Epoch 4: train_loss=0.9547 train_acc=0.4602 valid_loss=0.9550 valid_acc=0.4559
+2026-03-18 15:24:37 | INFO | omega_quant.models.trainer | Epoch 5: train_loss=0.9543 train_acc=0.4598 valid_loss=0.9584 valid_acc=0.4560
+2026-03-18 15:25:36 | INFO | omega_quant.models.trainer | Epoch 6: train_loss=0.9547 train_acc=0.4600 valid_loss=0.9555 valid_acc=0.4569
+2026-03-18 15:26:34 | INFO | omega_quant.models.trainer | Epoch 7: train_loss=0.9535 train_acc=0.4595 valid_loss=0.9567 valid_acc=0.4570
+2026-03-18 15:27:32 | INFO | omega_quant.models.trainer | Epoch 8: train_loss=0.9541 train_acc=0.4605 valid_loss=0.9572 valid_acc=0.4559
+2026-03-18 15:28:36 | INFO | omega_quant.models.trainer | Epoch 9: train_loss=0.9532 train_acc=0.4601 valid_loss=0.9585 valid_acc=0.4515
+2026-03-18 15:29:46 | INFO | omega_quant.models.trainer | Epoch 10: train_loss=0.9531 train_acc=0.4607 valid_loss=0.9544 valid_acc=0.4541
+2026-03-18 15:29:46 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant\models\omega_quant_hybrid.pt
+2026-03-19 08:12:17 | INFO | omega_quant.data.fetcher | Saved 87749 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-19 08:13:32 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.8671 train_acc=0.4824 valid_loss=0.8133 valid_acc=0.4706
+2026-03-19 08:13:32 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant/models/omega_quant_hybrid.pt
+2026-03-19 08:14:21 | INFO | omega_quant.backtesting.bt_engine | Backtest completed: final_value=10000.00 profit_pct=0.00 sharpe=0.000 max_dd=0.00
+2026-03-19 08:14:21 | INFO | __main__ | Backtest results: profit=0.00% sharpe=0.0000 max_drawdown=0.00%
+2026-03-19 08:47:51 | INFO | omega_quant.data.fetcher | Saved 87784 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-19 08:49:16 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.8104 train_acc=0.4834 valid_loss=0.8057 valid_acc=0.4798
+2026-03-19 08:49:16 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant/models/omega_quant_hybrid.pt
+2026-03-19 08:49:16 | INFO | omega_quant.models.pipeline | Training XGBoost tabular model...
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline | Top 10 Feature Importances (XGBoost):
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   bb_lower: 0.0621
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   ema_20: 0.0575
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   atr: 0.0564
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   close: 0.0564
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   bb_mid: 0.0561
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   ema_50: 0.0556
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   open: 0.0539
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   volatility_index: 0.0538
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   volume: 0.0520
+2026-03-19 08:49:17 | INFO | omega_quant.models.pipeline |   bb_upper: 0.0520
+2026-03-19 08:57:46 | INFO | omega_quant.backtesting.bt_engine | Backtest completed: final_value=10000.00 profit_pct=0.00 sharpe=0.000 max_dd=0.00
+2026-03-19 08:57:46 | INFO | __main__ | Backtest results: profit=0.00% sharpe=0.0000 max_drawdown=0.00%
+2026-03-21 13:45:24 | INFO | omega_quant.backtesting.bt_engine | Backtest completed: final_value=10000.00 profit_pct=0.00 sharpe=0.000 max_dd=0.00
+2026-03-21 13:45:24 | INFO | __main__ | Backtest results: profit=0.00% sharpe=0.0000 max_drawdown=0.00%
+2026-03-21 13:45:45 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.8123 train_acc=0.4885 valid_loss=0.8008 valid_acc=0.4858
+2026-03-21 13:45:45 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant/models/omega_quant_hybrid.pt
+2026-03-21 13:45:45 | INFO | omega_quant.models.pipeline | Training XGBoost tabular model...
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline | Top 10 Feature Importances (XGBoost):
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   bb_lower: 0.0621
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   ema_20: 0.0575
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   atr: 0.0564
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   close: 0.0564
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   bb_mid: 0.0561
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   ema_50: 0.0556
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   open: 0.0539
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   volatility_index: 0.0538
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   volume: 0.0520
+2026-03-21 13:45:46 | INFO | omega_quant.models.pipeline |   bb_upper: 0.0520
+2026-03-21 13:47:12 | INFO | omega_quant.backtesting.bt_engine | Backtest completed: final_value=10000.00 profit_pct=0.00 sharpe=0.000 max_dd=0.00
+2026-03-21 13:47:12 | INFO | __main__ | Backtest results: profit=0.00% sharpe=0.0000 max_drawdown=0.00%
+2026-03-21 14:57:39 | INFO | omega_quant.data.fetcher | Saved 91034 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 15:05:05 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.8539 train_acc=0.4743 valid_loss=0.8243 valid_acc=0.4656
+2026-03-21 15:05:05 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant/models/omega_quant_hybrid.pt
+2026-03-21 15:05:05 | INFO | omega_quant.models.pipeline | Training XGBoost tabular model...
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline | Top 10 Feature Importances (XGBoost):
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   volatility_index: 0.1347
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   atr: 0.0559
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   open: 0.0545
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   volume_spike: 0.0537
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   trend_strength: 0.0510
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   ema_50: 0.0505
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   bb_mid: 0.0500
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   macd_signal: 0.0498
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   low: 0.0492
+2026-03-21 15:05:11 | INFO | omega_quant.models.pipeline |   rsi: 0.0475
+2026-03-21 15:08:42 | INFO | omega_quant.backtesting.bt_engine | INSTITUTIONAL BACKTEST: profit=0.00% sharpe=0.000 max_dd=0.00% pf=0.00 ROR=0.0000
+2026-03-21 15:08:42 | INFO | __main__ | Backtest results: profit=0.00% sharpe=0.0000 max_drawdown=0.00%
+2026-03-21 16:24:58 | INFO | omega_quant.agents.controller | No environment API keys. Defaulting to Backtesting/Paper Trader.
+2026-03-21 16:25:57 | INFO | omega_quant.data.fetcher | Saved 91122 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:26:45 | INFO | omega_quant.data.fetcher | Saved 86401 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:26:50 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771518411 and endTime=1774110411. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:26:50 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:26:50 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771518411 and endTime=1774110411. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:26:50 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:26:51 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771518412 and endTime=1774110412. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:26:51 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:26:51 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771518412 and endTime=1774110412. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:26:51 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:26:53 | CRITICAL | omega_quant.agents.supervisor | !!! SUPERVISOR OVERRIDE ACTUATED: RISK_CEILING_VIOLATION - Position pct 1.0 exceeds limit. !!!
+2026-03-21 16:27:55 | CRITICAL | omega_quant.agents.supervisor | !!! SUPERVISOR OVERRIDE ACTUATED: RISK_CEILING_VIOLATION - Position pct 1.0 exceeds limit. !!!
+2026-03-21 16:28:56 | CRITICAL | omega_quant.agents.supervisor | !!! SUPERVISOR OVERRIDE ACTUATED: RISK_CEILING_VIOLATION - Position pct 1.0 exceeds limit. !!!
+2026-03-21 16:29:11 | ERROR | omega_quant.agents.controller | Agent loop core failed: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 212, in run
+    time.sleep(scan_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 16:30:47 | INFO | omega_quant.agents.controller | No environment API keys. Defaulting to Backtesting/Paper Trader.
+2026-03-21 16:31:53 | INFO | omega_quant.data.fetcher | Saved 91128 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:32:42 | INFO | omega_quant.data.fetcher | Saved 86407 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:32:46 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771518766 and endTime=1774110766. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:32:46 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:32:46 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771518766 and endTime=1774110766. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:32:46 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:32:47 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771518768 and endTime=1774110768. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:32:47 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:32:47 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771518768 and endTime=1774110768. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:32:47 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:33:18 | ERROR | omega_quant.data.fetcher | Failed to update BTC/USDT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 137, in update_all_symbols
+    df = self.fetch_historical(symbol, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 63, in fetch_historical
+    batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 4701, in fetch_ohlcv
+    response = self.publicGetKlines(self.extend(request, params))
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 11647, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 5300, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 662, in fetch
+    response = self.session.request(
+        method,
+    ...<6 lines>...
+        files=files
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 16:33:19 | ERROR | omega_quant.data.fetcher | Failed to update ETH/USDT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 137, in update_all_symbols
+    df = self.fetch_historical(symbol, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 63, in fetch_historical
+    batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 4701, in fetch_ohlcv
+    response = self.publicGetKlines(self.extend(request, params))
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 11647, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 5300, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 662, in fetch
+    response = self.session.request(
+        method,
+    ...<6 lines>...
+        files=files
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 16:33:19 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 89, in fetch_stock_historical
+    hist = yf.download(
+        tickers=ticker,
+    ...<3 lines>...
+        auto_adjust=False,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/utils.py", line 95, in wrapper
+    result = func(*args, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/multi.py", line 158, in download
+    _time.sleep(0.01)
+    ~~~~~~~~~~~^^^^^^
+KeyboardInterrupt
+2026-03-21 16:33:19 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 89, in fetch_stock_historical
+    hist = yf.download(
+        tickers=ticker,
+    ...<3 lines>...
+        auto_adjust=False,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/utils.py", line 95, in wrapper
+    result = func(*args, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/multi.py", line 98, in download
+    YfData(session=session)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/data.py", line 71, in __call__
+    cls._instances[cls]._set_session(session)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/data.py", line 115, in _set_session
+    with self._cookie_lock:
+         ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 16:33:19 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 16:33:19 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:33:19 | ERROR | omega_quant.agents.controller | Agent loop core failed: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'macd'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 4850, in _set_item_mgr
+    loc = self._info_axis.get_loc(key)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'macd'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 255, in run
+    probs = self._predict_latest(df)
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 130, in _predict_latest
+    fdf = build_features(df)
+  File "/mnt/e/Qmega-Quant/omega_quant/utils/features.py", line 60, in build_features
+    out["macd"] = macd
+    ~~~^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 4672, in __setitem__
+    self._set_item(key, value)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 4886, in _set_item
+    self._set_item_mgr(key, value, refs)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/frame.py", line 4853, in _set_item_mgr
+    self._mgr.insert(len(self._info_axis), key, value, refs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/internals/managers.py", line 1534, in insert
+    new_axis = self.items.insert(loc, item)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/indexes/base.py", line 7188, in insert
+    res_values = arr.insert(loc, item)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/arrays/string_arrow.py", line 263, in insert
+    return super().insert(loc, item)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/arrays/base.py", line 2556, in insert
+    item_arr = type(self)._from_sequence([item], dtype=self.dtype)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/arrays/string_arrow.py", line 238, in _from_sequence
+    pa_arr = pa.array(result, type=pa.large_string(), from_pandas=True)
+KeyboardInterrupt
+2026-03-21 16:38:20 | INFO | omega_quant.agents.controller | No environment API keys. Defaulting to Backtesting/Paper Trader.
+2026-03-21 16:39:18 | INFO | omega_quant.data.fetcher | Saved 91136 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:40:12 | INFO | omega_quant.data.fetcher | Saved 86415 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:40:15 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519216 and endTime=1774111216. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:40:15 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:40:15 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519216 and endTime=1774111216. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:40:15 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:40:17 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519217 and endTime=1774111217. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:40:17 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:40:17 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519217 and endTime=1774111217. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:40:17 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:41:12 | INFO | omega_quant.data.fetcher | Saved 91138 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:42:03 | INFO | omega_quant.data.fetcher | Saved 86417 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:42:04 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519324 and endTime=1774111324. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:42:04 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:42:04 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519324 and endTime=1774111324. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:42:04 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:42:05 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519326 and endTime=1774111326. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:42:05 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:42:05 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519326 and endTime=1774111326. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:42:05 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:42:05 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 16:42:05 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:42:09 | ERROR | omega_quant.agents.controller | Agent loop core failed: Object of type Timestamp is not JSON serializable
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 276, in run
+    self.memory.log_prediction(sym, decision.action, float(decision.confidence), row)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/omega_quant/utils/performance_memory.py", line 43, in log_prediction
+    self._save_memory()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/mnt/e/Qmega-Quant/omega_quant/utils/performance_memory.py", line 57, in _save_memory
+    json.dump(self.memory, f, indent=2)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 440, in _iterencode
+    o = _default(o)
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Timestamp is not JSON serializable
+2026-03-21 16:44:11 | INFO | omega_quant.data.fetcher | Saved 91141 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:45:09 | INFO | omega_quant.data.fetcher | Saved 86420 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:45:10 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519510 and endTime=1774111510. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:45:10 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:45:10 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519510 and endTime=1774111510. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:45:10 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:45:11 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519511 and endTime=1774111511. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:45:11 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:45:11 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519511 and endTime=1774111511. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:45:11 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:45:11 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 16:45:11 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:45:11 | ERROR | omega_quant.agents.controller | Agent loop core failed: Object of type Timestamp is not JSON serializable
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 276, in run
+    self.memory.log_prediction(sym, decision.action, float(decision.confidence), row)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/omega_quant/utils/performance_memory.py", line 43, in log_prediction
+    self._save_memory()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/mnt/e/Qmega-Quant/omega_quant/utils/performance_memory.py", line 57, in _save_memory
+    json.dump(self.memory, f, indent=2)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 440, in _iterencode
+    o = _default(o)
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Timestamp is not JSON serializable
+2026-03-21 16:47:08 | INFO | omega_quant.data.fetcher | Saved 91144 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:47:59 | INFO | omega_quant.data.fetcher | Saved 86422 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:48:00 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519681 and endTime=1774111681. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:48:00 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:48:00 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519681 and endTime=1774111681. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:48:00 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:48:01 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519681 and endTime=1774111681. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:48:01 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:48:01 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519681 and endTime=1774111681. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:48:01 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:48:01 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 16:48:01 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:48:01 | ERROR | omega_quant.agents.controller | Agent loop core failed: Object of type Timestamp is not JSON serializable
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 276, in run
+    self.memory.log_prediction(sym, decision.action, float(decision.confidence), row)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/omega_quant/utils/performance_memory.py", line 43, in log_prediction
+    self._save_memory()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/mnt/e/Qmega-Quant/omega_quant/utils/performance_memory.py", line 57, in _save_memory
+    json.dump(self.memory, f, indent=2)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 407, in _iterencode_dict
+    yield from chunks
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 440, in _iterencode
+    o = _default(o)
+  File "/home/karn/miniconda3/lib/python3.13/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type Timestamp is not JSON serializable
+2026-03-21 16:49:50 | INFO | omega_quant.agents.controller | No environment API keys. Defaulting to Backtesting/Paper Trader.
+2026-03-21 16:50:43 | INFO | omega_quant.data.fetcher | Saved 91147 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:51:20 | INFO | omega_quant.data.fetcher | Saved 86426 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:51:24 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519885 and endTime=1774111885. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:51:24 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:51:24 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519885 and endTime=1774111885. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:51:24 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:51:25 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519886 and endTime=1774111886. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:51:25 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:51:25 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519886 and endTime=1774111886. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:51:25 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:52:03 | INFO | omega_quant.data.fetcher | Saved 91149 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:52:41 | INFO | omega_quant.data.fetcher | Saved 86427 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:52:42 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519962 and endTime=1774111962. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:52:42 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:52:42 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519962 and endTime=1774111962. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:52:42 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:52:43 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519964 and endTime=1774111964. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:52:43 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:52:43 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771519964 and endTime=1774111964. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:52:43 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:52:43 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 16:52:43 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:52:48 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:52:48 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 16:54:37 | INFO | omega_quant.data.fetcher | Saved 91151 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:55:22 | INFO | omega_quant.data.fetcher | Saved 86430 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:55:23 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520124 and endTime=1774112124. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:55:23 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:55:23 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520124 and endTime=1774112124. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:55:23 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:55:24 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520125 and endTime=1774112125. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:55:24 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:55:24 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520125 and endTime=1774112125. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:55:24 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:55:24 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 16:55:24 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:55:25 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:55:25 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 16:57:12 | INFO | omega_quant.data.fetcher | Saved 91154 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 16:57:57 | INFO | omega_quant.data.fetcher | Saved 86432 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 16:57:58 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520278 and endTime=1774112278. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:57:58 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:57:58 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520278 and endTime=1774112278. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:57:58 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 16:57:59 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520279 and endTime=1774112279. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:57:59 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 16:57:59 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520279 and endTime=1774112279. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 16:57:59 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 16:57:59 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 16:57:59 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:57:59 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 16:57:59 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 16:59:50 | INFO | omega_quant.data.fetcher | Saved 91156 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:00:42 | INFO | omega_quant.data.fetcher | Saved 86435 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:00:43 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520443 and endTime=1774112443. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:00:43 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:00:43 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520443 and endTime=1774112443. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:00:43 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 17:00:45 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520445 and endTime=1774112445. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:00:45 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:00:45 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520445 and endTime=1774112445. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:00:45 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 17:00:45 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:00:45 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:00:45 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:00:45 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:07:33 | INFO | omega_quant.agents.controller | Found API Credentials! Engaging Phase 1: MICRO-CAPITAL LIVE VALIDATION SYSTEM.
+2026-03-21 17:07:33 | CRITICAL | omega_quant.execution.trader | ============================================================
+2026-03-21 17:07:33 | CRITICAL | omega_quant.execution.trader |  🔒 HUMAN INTERVENTION LOCK ACTIVE 🔒
+2026-03-21 17:07:33 | CRITICAL | omega_quant.execution.trader |  SYSTEM RUNNING AUTONOMOUSLY IN LIVE VALIDATION MODE.
+2026-03-21 17:07:33 | CRITICAL | omega_quant.execution.trader |  DO NOT MANUALLY OVERRIDE TRADES ON THE EXCHANGE.
+2026-03-21 17:07:33 | CRITICAL | omega_quant.execution.trader | ============================================================
+2026-03-21 17:08:26 | INFO | omega_quant.data.fetcher | Saved 91165 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:09:11 | INFO | omega_quant.data.fetcher | Saved 86444 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:09:14 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520955 and endTime=1774112955. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:09:14 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:09:14 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520955 and endTime=1774112955. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:09:14 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 17:09:15 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520956 and endTime=1774112956. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:09:15 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:09:15 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771520956 and endTime=1774112956. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:09:15 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 17:09:16 | WARNING | omega_quant.agents.controller | No complete model found (Error(s) in loading state_dict for DeepEnsemble:
+	size mismatch for qcnn.conv.0.weight: copying a param with shape torch.Size([32, 19, 3]) from checkpoint, the shape in current model is torch.Size([64, 19, 3]).
+	size mismatch for qcnn.conv.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for qcnn.conv.2.weight: copying a param with shape torch.Size([32, 32, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3]).
+	size mismatch for qcnn.conv.2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for qcnn.lstm.weight_ih_l0: copying a param with shape torch.Size([256, 32]) from checkpoint, the shape in current model is torch.Size([512, 64]).
+	size mismatch for qcnn.lstm.weight_hh_l0: copying a param with shape torch.Size([256, 64]) from checkpoint, the shape in current model is torch.Size([512, 128]).
+	size mismatch for qcnn.lstm.bias_ih_l0: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for qcnn.lstm.bias_hh_l0: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for qcnn.quantum_layer.input_proj.weight: copying a param with shape torch.Size([4, 19]) from checkpoint, the shape in current model is torch.Size([8, 19]).
+	size mismatch for qcnn.quantum_layer.input_proj.bias: copying a param with shape torch.Size([4]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for qcnn.quantum_layer.quantum.weights: copying a param with shape torch.Size([2, 4, 3]) from checkpoint, the shape in current model is torch.Size([4, 8, 3]).
+	size mismatch for qcnn.head.0.weight: copying a param with shape torch.Size([64, 68]) from checkpoint, the shape in current model is torch.Size([64, 136]).). Retraining...
+2026-03-21 17:09:16 | INFO | omega_quant.agents.controller | Agent retraining Phase...
+2026-03-21 17:10:05 | INFO | omega_quant.data.fetcher | Saved 91167 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:10:56 | INFO | omega_quant.data.fetcher | Saved 86445 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:10:56 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521056 and endTime=1774113056. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:10:56 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:10:56 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521056 and endTime=1774113056. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:10:56 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 126, in _ensure_model
+    self.model = load_model(self.config, input_dim=len(self.feature_columns))
+                 ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/omega_quant/models/pipeline.py", line 113, in load_model
+    deep_model.load_state_dict(state)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 2635, in load_state_dict
+    raise RuntimeError(
+    ...<3 lines>...
+    )
+RuntimeError: Error(s) in loading state_dict for DeepEnsemble:
+	size mismatch for qcnn.conv.0.weight: copying a param with shape torch.Size([32, 19, 3]) from checkpoint, the shape in current model is torch.Size([64, 19, 3]).
+	size mismatch for qcnn.conv.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for qcnn.conv.2.weight: copying a param with shape torch.Size([32, 32, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3]).
+	size mismatch for qcnn.conv.2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for qcnn.lstm.weight_ih_l0: copying a param with shape torch.Size([256, 32]) from checkpoint, the shape in current model is torch.Size([512, 64]).
+	size mismatch for qcnn.lstm.weight_hh_l0: copying a param with shape torch.Size([256, 64]) from checkpoint, the shape in current model is torch.Size([512, 128]).
+	size mismatch for qcnn.lstm.bias_ih_l0: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for qcnn.lstm.bias_hh_l0: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for qcnn.quantum_layer.input_proj.weight: copying a param with shape torch.Size([4, 19]) from checkpoint, the shape in current model is torch.Size([8, 19]).
+	size mismatch for qcnn.quantum_layer.input_proj.bias: copying a param with shape torch.Size([4]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for qcnn.quantum_layer.quantum.weights: copying a param with shape torch.Size([2, 4, 3]) from checkpoint, the shape in current model is torch.Size([4, 8, 3]).
+	size mismatch for qcnn.head.0.weight: copying a param with shape torch.Size([64, 68]) from checkpoint, the shape in current model is torch.Size([64, 136]).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 17:10:58 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521057 and endTime=1774113057. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:10:58 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:10:58 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521057 and endTime=1774113057. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:10:58 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 126, in _ensure_model
+    self.model = load_model(self.config, input_dim=len(self.feature_columns))
+                 ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/omega_quant/models/pipeline.py", line 113, in load_model
+    deep_model.load_state_dict(state)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 2635, in load_state_dict
+    raise RuntimeError(
+    ...<3 lines>...
+    )
+RuntimeError: Error(s) in loading state_dict for DeepEnsemble:
+	size mismatch for qcnn.conv.0.weight: copying a param with shape torch.Size([32, 19, 3]) from checkpoint, the shape in current model is torch.Size([64, 19, 3]).
+	size mismatch for qcnn.conv.0.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for qcnn.conv.2.weight: copying a param with shape torch.Size([32, 32, 3]) from checkpoint, the shape in current model is torch.Size([64, 64, 3]).
+	size mismatch for qcnn.conv.2.bias: copying a param with shape torch.Size([32]) from checkpoint, the shape in current model is torch.Size([64]).
+	size mismatch for qcnn.lstm.weight_ih_l0: copying a param with shape torch.Size([256, 32]) from checkpoint, the shape in current model is torch.Size([512, 64]).
+	size mismatch for qcnn.lstm.weight_hh_l0: copying a param with shape torch.Size([256, 64]) from checkpoint, the shape in current model is torch.Size([512, 128]).
+	size mismatch for qcnn.lstm.bias_ih_l0: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for qcnn.lstm.bias_hh_l0: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([512]).
+	size mismatch for qcnn.quantum_layer.input_proj.weight: copying a param with shape torch.Size([4, 19]) from checkpoint, the shape in current model is torch.Size([8, 19]).
+	size mismatch for qcnn.quantum_layer.input_proj.bias: copying a param with shape torch.Size([4]) from checkpoint, the shape in current model is torch.Size([8]).
+	size mismatch for qcnn.quantum_layer.quantum.weights: copying a param with shape torch.Size([2, 4, 3]) from checkpoint, the shape in current model is torch.Size([4, 8, 3]).
+	size mismatch for qcnn.head.0.weight: copying a param with shape torch.Size([64, 68]) from checkpoint, the shape in current model is torch.Size([64, 136]).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 17:10:58 | INFO | omega_quant.models.trainer | CUDA DETECTED: Engaging CUDNN Hardware Acceleration.
+2026-03-21 17:12:20 | INFO | omega_quant.models.trainer | Epoch 1: train_loss=0.9605 train_acc=0.4549 valid_loss=0.9520 valid_acc=0.4580
+2026-03-21 17:13:18 | INFO | omega_quant.models.trainer | Epoch 2: train_loss=0.9529 train_acc=0.4578 valid_loss=0.9504 valid_acc=0.4588
+2026-03-21 17:14:16 | INFO | omega_quant.models.trainer | Epoch 3: train_loss=0.9503 train_acc=0.4600 valid_loss=0.9558 valid_acc=0.4564
+2026-03-21 17:15:15 | INFO | omega_quant.models.trainer | Epoch 4: train_loss=0.9503 train_acc=0.4588 valid_loss=0.9492 valid_acc=0.4614
+2026-03-21 17:16:11 | INFO | omega_quant.models.trainer | Epoch 5: train_loss=0.9491 train_acc=0.4613 valid_loss=0.9508 valid_acc=0.4583
+2026-03-21 17:17:09 | INFO | omega_quant.models.trainer | Epoch 6: train_loss=0.9485 train_acc=0.4612 valid_loss=0.9483 valid_acc=0.4637
+2026-03-21 17:18:08 | INFO | omega_quant.models.trainer | Epoch 7: train_loss=0.9481 train_acc=0.4632 valid_loss=0.9518 valid_acc=0.4612
+2026-03-21 17:19:05 | INFO | omega_quant.models.trainer | Epoch 8: train_loss=0.9481 train_acc=0.4631 valid_loss=0.9513 valid_acc=0.4601
+2026-03-21 17:20:02 | INFO | omega_quant.models.trainer | Epoch 9: train_loss=0.9483 train_acc=0.4648 valid_loss=0.9484 valid_acc=0.4607
+2026-03-21 17:21:00 | INFO | omega_quant.models.trainer | Epoch 10: train_loss=0.9476 train_acc=0.4640 valid_loss=0.9490 valid_acc=0.4625
+2026-03-21 17:21:00 | INFO | omega_quant.models.trainer | Saved trained model to omega_quant/models/omega_quant_hybrid.pt
+2026-03-21 17:21:00 | INFO | omega_quant.models.pipeline | Training XGBoost tabular model...
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline | Top 10 Feature Importances (XGBoost):
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   bb_lower: 0.5416
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   atr: 0.0777
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   close: 0.0646
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   high: 0.0600
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   bb_upper: 0.0466
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   low: 0.0424
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   bb_mid: 0.0303
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   ema_20: 0.0281
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   volatility_index: 0.0242
+2026-03-21 17:21:02 | INFO | omega_quant.models.pipeline |   open: 0.0181
+2026-03-21 17:22:09 | INFO | omega_quant.data.fetcher | Saved 91179 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:23:03 | INFO | omega_quant.data.fetcher | Saved 86458 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:23:04 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521784 and endTime=1774113784. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:23:04 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:23:04 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521784 and endTime=1774113784. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:23:04 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 17:23:05 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521785 and endTime=1774113785. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:23:05 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:23:05 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521785 and endTime=1774113785. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:23:05 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 17:23:05 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:23:05 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:23:06 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:23:10 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: -0.16 | Whale Buy: 38.88 | Whale Sell: 56.81 | Void: 0.0018
+2026-03-21 17:23:10 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:24:26 | INFO | omega_quant.data.fetcher | Saved 91181 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:25:20 | INFO | omega_quant.data.fetcher | Saved 86460 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:25:21 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521921 and endTime=1774113921. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:25:21 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:25:21 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521921 and endTime=1774113921. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:25:21 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 17:25:22 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521923 and endTime=1774113923. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:25:22 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:25:22 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521923 and endTime=1774113923. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:25:22 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 17:25:22 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:25:22 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:25:23 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:25:23 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: -0.01 | Whale Buy: 57.53 | Whale Sell: 37.60 | Void: 0.0020
+2026-03-21 17:25:23 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:26:15 | ERROR | omega_quant.data.fetcher | Failed to update BTC/USDT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 137, in update_all_symbols
+    df = self.fetch_historical(symbol, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 63, in fetch_historical
+    batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 4701, in fetch_ohlcv
+    response = self.publicGetKlines(self.extend(request, params))
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 11647, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 5300, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 662, in fetch
+    response = self.session.request(
+        method,
+    ...<6 lines>...
+        files=files
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 17:26:21 | ERROR | omega_quant.data.fetcher | Failed to update ETH/USDT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 137, in update_all_symbols
+    df = self.fetch_historical(symbol, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 63, in fetch_historical
+    batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 4701, in fetch_ohlcv
+    response = self.publicGetKlines(self.extend(request, params))
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 11647, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 5300, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 662, in fetch
+    response = self.session.request(
+        method,
+    ...<6 lines>...
+        files=files
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 17:26:21 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 89, in fetch_stock_historical
+    hist = yf.download(
+        tickers=ticker,
+    ...<3 lines>...
+        auto_adjust=False,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/utils.py", line 95, in wrapper
+    result = func(*args, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/multi.py", line 158, in download
+    _time.sleep(0.01)
+    ~~~~~~~~~~~^^^^^^
+KeyboardInterrupt
+2026-03-21 17:26:21 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 89, in fetch_stock_historical
+    hist = yf.download(
+        tickers=ticker,
+    ...<3 lines>...
+        auto_adjust=False,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/utils.py", line 95, in wrapper
+    result = func(*args, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/multi.py", line 158, in download
+    _time.sleep(0.01)
+    ~~~~~~~~~~~^^^^^^
+KeyboardInterrupt
+2026-03-21 17:26:21 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:26:21 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:26:21 | ERROR | omega_quant.agents.controller | Agent loop core failed: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 258, in run
+    probs = self._predict_latest(df)
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 134, in _predict_latest
+    ndf = normalize_features(
+        fdf,
+    ...<2 lines>...
+        fit=False,
+    )
+  File "/mnt/e/Qmega-Quant/omega_quant/utils/features.py", line 104, in normalize_features
+    scaled_df = df.copy()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/generic.py", line 6663, in copy
+    data = self._mgr.copy(deep=deep)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/internals/managers.py", line 734, in copy
+    res = self.apply("copy", deep=deep)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/internals/managers.py", line 442, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/pandas/core/internals/blocks.py", line 645, in copy
+    values = values.copy()
+KeyboardInterrupt
+2026-03-21 17:26:22 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521982 and endTime=1774113982. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:26:22 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771521982 and endTime=1774113982. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:27:06 | INFO | omega_quant.agents.controller | Found API Credentials! Engaging Phase 1: MICRO-CAPITAL LIVE VALIDATION SYSTEM.
+2026-03-21 17:27:06 | CRITICAL | omega_quant.execution.trader | ============================================================
+2026-03-21 17:27:06 | CRITICAL | omega_quant.execution.trader |  🔒 HUMAN INTERVENTION LOCK ACTIVE 🔒
+2026-03-21 17:27:06 | CRITICAL | omega_quant.execution.trader |  SYSTEM RUNNING AUTONOMOUSLY IN LIVE VALIDATION MODE.
+2026-03-21 17:27:06 | CRITICAL | omega_quant.execution.trader |  DO NOT MANUALLY OVERRIDE TRADES ON THE EXCHANGE.
+2026-03-21 17:27:06 | CRITICAL | omega_quant.execution.trader | ============================================================
+2026-03-21 17:28:03 | INFO | omega_quant.data.fetcher | Saved 91185 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:28:52 | INFO | omega_quant.data.fetcher | Saved 86463 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:28:55 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771522136 and endTime=1774114136. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:28:55 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:28:55 | ERROR | yfinance | ['AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771522136 and endTime=1774114136. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:28:55 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: No stock data fetched for AAPL
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for AAPL
+2026-03-21 17:28:56 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771522137 and endTime=1774114137. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:28:56 | ERROR | yfinance | 
+1 Failed download:
+2026-03-21 17:28:56 | ERROR | yfinance | ['MSFT']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771522137 and endTime=1774114137. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:28:56 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 17:29:44 | INFO | omega_quant.data.fetcher | Saved 91186 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:30:22 | ERROR | omega_quant.data.fetcher | Failed to update ETH/USDT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 137, in update_all_symbols
+    df = self.fetch_historical(symbol, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 63, in fetch_historical
+    batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 4701, in fetch_ohlcv
+    response = self.publicGetKlines(self.extend(request, params))
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 11647, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 5300, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 662, in fetch
+    response = self.session.request(
+        method,
+    ...<6 lines>...
+        files=files
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 17:30:22 | ERROR | omega_quant.data.fetcher | Failed to update AAPL: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 89, in fetch_stock_historical
+    hist = yf.download(
+        tickers=ticker,
+    ...<3 lines>...
+        auto_adjust=False,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/utils.py", line 95, in wrapper
+    result = func(*args, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/yfinance/multi.py", line 158, in download
+    _time.sleep(0.01)
+    ~~~~~~~~~~~^^^^^^
+KeyboardInterrupt
+2026-03-21 17:30:23 | ERROR | yfinance | $MSFT: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771522224 and endTime=1774114224. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:30:23 | ERROR | yfinance | $AAPL: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771522224 and endTime=1774114224. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:30:23 | ERROR | yfinance | 
+2 Failed downloads:
+2026-03-21 17:30:23 | ERROR | yfinance | ['MSFT', 'AAPL']: possibly delisted; no price data found  (period=30d) (Yahoo error = "1m data not available for startTime=1771522224 and endTime=1774114224. Only 8 days worth of 1m granularity data are allowed to be fetched per request.")
+2026-03-21 17:30:23 | ERROR | omega_quant.data.fetcher | Failed to update MSFT: No stock data fetched for MSFT
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 144, in update_all_symbols
+    df = self.fetch_stock_historical(ticker, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 97, in fetch_stock_historical
+    raise RuntimeError(f"No stock data fetched for {ticker}")
+RuntimeError: No stock data fetched for MSFT
+2026-03-21 17:30:23 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:30:24 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:30:24 | ERROR | omega_quant.agents.controller | Agent loop core failed: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 258, in run
+    probs = self._predict_latest(df)
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 147, in _predict_latest
+    probs = predict_probabilities(self.model, x)
+  File "/mnt/e/Qmega-Quant/omega_quant/models/pipeline.py", line 126, in predict_probabilities
+    model.to(device)
+    ~~~~~~~~^^^^^^^^
+  File "/mnt/e/Qmega-Quant/omega_quant/models/pipeline.py", line 35, in to
+    self.deep_model.to(device)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1381, in to
+    return self._apply(convert)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+    ~~~~~~~~~~~~~^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+    ~~~~~~~~~~~~~^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+    ~~~~~~~~~~~~~^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 964, in _apply
+    param_applied = fn(param)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1367, in convert
+    return t.to(
+           ~~~~^
+        device,
+        ^^^^^^^
+        dtype if t.is_floating_point() or t.is_complex() else None,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        non_blocking,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/cuda/__init__.py", line 435, in _lazy_init
+    queued_call()
+    ~~~~~~~~~~~^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/cuda/__init__.py", line 278, in _check_capability
+    for d in range(device_count()):
+                   ~~~~~~~~~~~~^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/cuda/__init__.py", line 1058, in device_count
+    nvml_count = _device_count_amdsmi() if torch.version.hip else _device_count_nvml()
+                                                                  ~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/cuda/__init__.py", line 1007, in _device_count_nvml
+    raw_cnt = _raw_device_count_nvml()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/torch/cuda/__init__.py", line 846, in _raw_device_count_nvml
+    rc = nvml_h.nvmlInit()
+KeyboardInterrupt
+2026-03-21 17:31:10 | INFO | omega_quant.agents.controller | Found API Credentials! Engaging Phase 1: MICRO-CAPITAL LIVE VALIDATION SYSTEM.
+2026-03-21 17:31:10 | CRITICAL | omega_quant.execution.trader | ============================================================
+2026-03-21 17:31:10 | CRITICAL | omega_quant.execution.trader |  🔒 HUMAN INTERVENTION LOCK ACTIVE 🔒
+2026-03-21 17:31:10 | CRITICAL | omega_quant.execution.trader |  SYSTEM RUNNING AUTONOMOUSLY IN LIVE VALIDATION MODE.
+2026-03-21 17:31:10 | CRITICAL | omega_quant.execution.trader |  DO NOT MANUALLY OVERRIDE TRADES ON THE EXCHANGE.
+2026-03-21 17:31:10 | CRITICAL | omega_quant.execution.trader | ============================================================
+2026-03-21 17:32:03 | INFO | omega_quant.data.fetcher | Saved 91189 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:32:49 | INFO | omega_quant.data.fetcher | Saved 86467 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:33:39 | INFO | omega_quant.data.fetcher | Saved 91190 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:34:27 | INFO | omega_quant.data.fetcher | Saved 86469 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:34:27 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:34:27 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:34:33 | ERROR | omega_quant.agents.controller | Agent loop core failed: 'XGBClassifier' object has no attribute 'inplace_predict'
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 258, in run
+    probs = self._predict_latest(df)
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 147, in _predict_latest
+    probs = predict_probabilities(self.model, x)
+  File "/mnt/e/Qmega-Quant/omega_quant/models/pipeline.py", line 145, in predict_probabilities
+    prob_xgb = model.xgb_model.inplace_predict(x_tabular)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'XGBClassifier' object has no attribute 'inplace_predict'
+2026-03-21 17:35:37 | INFO | omega_quant.data.fetcher | Saved 91192 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:35:51 | ERROR | omega_quant.data.fetcher | Failed to update ETH/USDT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 137, in update_all_symbols
+    df = self.fetch_historical(symbol, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 63, in fetch_historical
+    batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 4701, in fetch_ohlcv
+    response = self.publicGetKlines(self.extend(request, params))
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 11647, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 5300, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 662, in fetch
+    response = self.session.request(
+        method,
+    ...<6 lines>...
+        files=files
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 17:35:51 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:35:51 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:35:51 | ERROR | omega_quant.agents.controller | Agent loop core failed: 'XGBClassifier' object has no attribute 'inplace_predict'
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 258, in run
+    probs = self._predict_latest(df)
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 147, in _predict_latest
+    probs = predict_probabilities(self.model, x)
+  File "/mnt/e/Qmega-Quant/omega_quant/models/pipeline.py", line 145, in predict_probabilities
+AttributeError: 'XGBClassifier' object has no attribute 'inplace_predict'
+2026-03-21 17:37:51 | INFO | omega_quant.agents.controller | Found API Credentials! Engaging Phase 1: MICRO-CAPITAL LIVE VALIDATION SYSTEM.
+2026-03-21 17:37:51 | CRITICAL | omega_quant.execution.trader | ============================================================
+2026-03-21 17:37:51 | CRITICAL | omega_quant.execution.trader |  🔒 HUMAN INTERVENTION LOCK ACTIVE 🔒
+2026-03-21 17:37:51 | CRITICAL | omega_quant.execution.trader |  SYSTEM RUNNING AUTONOMOUSLY IN LIVE VALIDATION MODE.
+2026-03-21 17:37:51 | CRITICAL | omega_quant.execution.trader |  DO NOT MANUALLY OVERRIDE TRADES ON THE EXCHANGE.
+2026-03-21 17:37:51 | CRITICAL | omega_quant.execution.trader | ============================================================
+2026-03-21 17:38:48 | INFO | omega_quant.data.fetcher | Saved 91195 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:39:29 | INFO | omega_quant.data.fetcher | Saved 86474 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:40:20 | INFO | omega_quant.data.fetcher | Saved 91197 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:41:03 | INFO | omega_quant.data.fetcher | Saved 86476 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:41:03 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:41:03 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:41:09 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:41:12 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: -0.29 | Whale Buy: 47.53 | Whale Sell: 138.30 | Void: 0.0017
+2026-03-21 17:41:12 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:42:04 | INFO | omega_quant.data.fetcher | Saved 91199 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:42:55 | INFO | omega_quant.data.fetcher | Saved 86477 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:42:55 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:42:55 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:42:55 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:42:56 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: 0.07 | Whale Buy: 21.62 | Whale Sell: 35.46 | Void: 0.0020
+2026-03-21 17:42:56 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:43:59 | INFO | omega_quant.data.fetcher | Saved 91200 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:44:42 | INFO | omega_quant.data.fetcher | Saved 86479 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:44:42 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:44:42 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:44:43 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:44:43 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: -0.12 | Whale Buy: 58.97 | Whale Sell: 25.78 | Void: 0.0016
+2026-03-21 17:44:43 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:45:46 | INFO | omega_quant.data.fetcher | Saved 91202 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:46:33 | INFO | omega_quant.data.fetcher | Saved 86481 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:46:33 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:46:33 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:46:33 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:46:34 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: -0.09 | Whale Buy: 83.09 | Whale Sell: 18.75 | Void: 0.0020
+2026-03-21 17:46:34 | WARNING | omega_quant.strategies.alpha_filter | Alpha: SELL Reject. WHALE BUY WALL ahead.
+2026-03-21 17:46:34 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:47:40 | INFO | omega_quant.data.fetcher | Saved 91204 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:48:31 | INFO | omega_quant.data.fetcher | Saved 86483 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:48:31 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:48:31 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:48:31 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:48:32 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: -0.11 | Whale Buy: 41.00 | Whale Sell: 60.47 | Void: 0.0020
+2026-03-21 17:48:32 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:49:37 | INFO | omega_quant.data.fetcher | Saved 91206 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:50:23 | INFO | omega_quant.data.fetcher | Saved 86485 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:50:23 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:50:23 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:50:23 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:50:24 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: -0.37 | Whale Buy: 51.29 | Whale Sell: 74.31 | Void: 0.0020
+2026-03-21 17:50:24 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:51:15 | INFO | omega_quant.data.fetcher | Saved 91208 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:52:05 | INFO | omega_quant.data.fetcher | Saved 86487 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:52:05 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:52:05 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:52:05 | WARNING | omega_quant.agents.controller | Phase 2 Overfit Defense: High Noise Sensitivity. Suppressing signal.
+2026-03-21 17:52:05 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:52:06 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: -0.27 | Whale Buy: 34.52 | Whale Sell: 33.71 | Void: 0.0020
+2026-03-21 17:52:06 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:52:59 | INFO | omega_quant.data.fetcher | Saved 91210 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:53:44 | INFO | omega_quant.data.fetcher | Saved 86488 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:53:44 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:53:44 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:53:44 | WARNING | omega_quant.agents.controller | Phase 2 Overfit Defense: High Noise Sensitivity. Suppressing signal.
+2026-03-21 17:53:44 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:53:45 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: 0.11 | Whale Buy: 65.46 | Whale Sell: 50.23 | Void: 0.0020
+2026-03-21 17:53:45 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:54:43 | INFO | omega_quant.data.fetcher | Saved 91211 rows to omega_quant/data/parquet/BTC_USDT_1m.parquet
+2026-03-21 17:55:32 | INFO | omega_quant.data.fetcher | Saved 86490 rows to omega_quant/data/parquet/ETH_USDT_1m.parquet
+2026-03-21 17:55:32 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:55:32 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:55:33 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:55:33 | INFO | omega_quant.data.liquidity_intelligence | [ETH/USDT LIQUIDITY] Imbalance: 0.20 | Whale Buy: 47.92 | Whale Sell: 63.46 | Void: 0.0018
+2026-03-21 17:55:33 | INFO | omega_quant.utils.live_monitor | [LIVE MONITOR] Equity: $10000.00 | Daily PNL: $0.00 | Open Positions: 0
+2026-03-21 17:55:53 | ERROR | omega_quant.data.fetcher | Failed to update BTC/USDT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 137, in update_all_symbols
+    df = self.fetch_historical(symbol, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 76, in fetch_historical
+    time.sleep(self.exchange.rateLimit / 1000)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 17:55:53 | ERROR | omega_quant.data.fetcher | Failed to update ETH/USDT: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 137, in update_all_symbols
+    df = self.fetch_historical(symbol, since_days)
+  File "/mnt/e/Qmega-Quant/omega_quant/data/fetcher.py", line 63, in fetch_historical
+    batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 4701, in fetch_ohlcv
+    response = self.publicGetKlines(self.extend(request, params))
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/binance.py", line 11647, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 5300, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/ccxt/base/exchange.py", line 662, in fetch
+    response = self.session.request(
+        method,
+    ...<6 lines>...
+        files=files
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "/mnt/e/Qmega-Quant/.venv/lib/python3.13/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/home/karn/miniconda3/lib/python3.13/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/karn/miniconda3/lib/python3.13/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt
+2026-03-21 17:55:53 | INFO | omega_quant.execution.multi_asset | Portfolio Allocator: Correlation matrix updated.
+2026-03-21 17:55:53 | INFO | omega_quant.strategies.strategy_manager | Market Regime Classifier: Evaluated TREND_FOLLOWING
+2026-03-21 17:55:54 | ERROR | omega_quant.agents.controller | Agent loop core failed: 
+Traceback (most recent call last):
+  File "/mnt/e/Qmega-Quant/omega_quant/agents/controller.py", line 263, in run
+    expected_pnl = decision.confidence * 0.05
+KeyboardInterrupt

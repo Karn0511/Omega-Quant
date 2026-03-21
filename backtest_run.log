@@ -1,0 +1,2 @@
+2026-03-18 15:22:23 | INFO | omega_quant.backtesting.bt_engine | Backtest completed: final_value=10000.00 profit_pct=0.00 sharpe=0.000 max_dd=0.00
+2026-03-18 15:22:23 | INFO | __main__ | Backtest results: profit=0.00% sharpe=0.0000 max_drawdown=0.00%

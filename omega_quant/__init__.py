@@ -1,0 +1,1 @@
+"""OMEGA-QUANT package root."""

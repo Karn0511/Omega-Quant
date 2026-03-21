@@ -42,6 +42,7 @@ from omega_quant.utils.live_intelligence import LiveIntelligenceEngine
 from omega_quant.models.drift_monitor import DriftMonitor
 from omega_quant.data.liquidity_intelligence import LiquidityIntelligence
 from omega_quant.utils.validation_mode import ValidationScanner
+from omega_quant.utils.calibration import SignalCalibrationEngine
 
 LOGGER = logging.getLogger(__name__)
 
@@ -81,6 +82,7 @@ class OmegaAgentController:
         self.preservation_engine = AlphaPreservationEngine()
         self.supervisor = SupervisorAgent(config)
         self.intelligence = LiveIntelligenceEngine()
+        self.calibration = SignalCalibrationEngine(config)
 
         # Phase 1: Micro-Capital Validation Deployment Setup
         load_dotenv()
@@ -191,7 +193,17 @@ class OmegaAgentController:
                     atr=atr
                 )
                 
+                # CALIBRATION INTEGRATION (Phases 1, 2, 5)
+                self.calibration.process_signal(sym, decision.action, decision.confidence, row.to_dict())
+                
                 if decision.action != "HOLD":
+                    # Adapt threshold based on calibration (Phase 2)
+                    threshold = self.calibration.state.get("adapted_threshold", 0.6)
+                    if decision.confidence < threshold:
+                        LOGGER.info("SERVERLESS: Signal %s (Conf: %.2f) rejected by Adaptive Threshold (%.2f)", 
+                                    decision.action, decision.confidence, threshold)
+                        continue
+
                     passed_filters = self.alpha_filter.evaluate_signal(decision.action, decision.confidence, row, liq_metrics)
                     
                     if passed_filters:
@@ -208,7 +220,7 @@ class OmegaAgentController:
                             "hard_guard": False, "capital_ratio": scaler_ratio
                         }
                         
-                        if self.supervisor.validate_trade_proposal(trade_proposal):
+                        if self.supervisor.validate_trade_proposal(trade_proposal) and decision.confidence >= 0.6:
                             # Phase 8: DRY-RUN Mode Support
                             dry_run = os.getenv("DRY_RUN", "False").lower() == "true"
                             if not dry_run:
@@ -217,12 +229,15 @@ class OmegaAgentController:
                             else:
                                 LOGGER.info("DRY-RUN ENABLED: Order simulated but NOT sent to exchange.")
                         else:
-                            LOGGER.warning("SERVERLESS: Signal blocked by Supervisor.")
+                            LOGGER.warning("SERVERLESS: Signal blocked by Supervisor or threshold.")
                     else:
                         LOGGER.warning("SERVERLESS: Signal blocked by Alpha/Liquidity filters.")
                 else:
                     LOGGER.info("SERVERLESS: Decision is HOLD for %s. No action taken.", sym)
-                    
+            
+            # Save calibration state (Phase 1-7 persistence)
+            self.calibration.save_state()
+            LOGGER.info(self.calibration.get_calibration_report())
             LOGGER.info("OMEGA-QUANT: Stateless execution pass complete. Exiting.")
             
         except Exception as e: # pylint: disable=broad-exception-caught

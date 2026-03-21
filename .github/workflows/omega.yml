@@ -11,6 +11,8 @@ jobs:
   trade:
     runs-on: ubuntu-latest
     environment: .env
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout Code
@@ -42,3 +44,10 @@ jobs:
       with:
         name: execution-logs
         path: omega_quant/data/*.json*
+
+    - name: Auto-Sync Cloud Performance
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Auto-Sync: Cloud Calibration & Decision Telemetry"
+        file_pattern: "omega_quant/data/*.json"
+        disable_globbing: true

@@ -14,7 +14,7 @@ import torch  # type: ignore
 from dotenv import load_dotenv
 # pylint: enable=import-error
 
-from omega_quant.data.fetcher import DataFetcher
+from omega_quant.data.fetcher import MarketDataFetcher
 from omega_quant.models.pipeline import (
     build_features,
     infer_feature_columns,
@@ -23,13 +23,13 @@ from omega_quant.models.pipeline import (
     predict_probabilities,
     train_model,
 )
-from omega_quant.strategies.signal_engine import SignalDecision, SignalEngine
+from omega_quant.strategies.signal_engine import StrategyEngine
 from omega_quant.strategies.strategy_manager import StrategyManager
-from omega_quant.execution.trader import PaperTrader, LiveValidationTrader, Position
+from omega_quant.strategies.alpha_filter import AlphaFilter
+from omega_quant.execution.trader import PaperTrader, LiveValidationTrader
 from omega_quant.execution.multi_asset import PortfolioAllocator
 from omega_quant.utils.risk import RiskManager
 from omega_quant.utils.performance_memory import PerformanceMemory
-from omega_quant.utils.alpha_filter import AlphaFilter
 from omega_quant.utils.capital_deployer import CapitalDeployer
 from omega_quant.utils.drawdown_defense import DrawdownDefense
 from omega_quant.utils.alpha_preservation import AlphaPreservationEngine
@@ -55,12 +55,19 @@ class OmegaAgentController:
         self.timeframe = config["data"]["timeframe"]
         self.parquet_dir = config["data"]["parquet_dir"]
 
-        self.fetcher = DataFetcher(config)
-        self.signal_engine = SignalEngine(config)
+        self.fetcher = MarketDataFetcher(config)
+        self.strategy_engine = StrategyEngine(config)
         self.strategy_manager = StrategyManager(config)
-        risk_manager = RiskManager(config)
+        
+        # Fixed RiskManager instantiation
+        risk_manager = RiskManager(
+            max_risk_per_trade=config["risk"].get("max_risk_per_trade", 0.01),
+            max_daily_loss=config["risk"].get("max_daily_loss", 0.05),
+            max_position_pct=config["risk"].get("max_position_pct", 0.1)
+        )
+        
         self.memory = PerformanceMemory()
-        self.alpha_filter = AlphaFilter()
+        self.alpha_filter = AlphaFilter(config)
         self.capital_deployer = CapitalDeployer()
         self.drawdown_defense = DrawdownDefense()
         self.allocator = PortfolioAllocator(self.symbols)
@@ -86,7 +93,7 @@ class OmegaAgentController:
             LOGGER.info("No environment API keys. Defaulting to Backtesting/Paper Trader.")
             self.trader = PaperTrader(config, risk_manager=risk_manager)
             
-        if self.state_manager.state["equity"]:
+        if self.state_manager.state.get("equity"):
             self.trader.equity = self.state_manager.state["equity"]
 
         self.model = None
@@ -148,7 +155,7 @@ class OmegaAgentController:
         if self.model is None or not self.feature_columns:
             try:
                 self._ensure_model()
-            except Exception:
+            except Exception: # pylint: disable=broad-exception-caught
                 LOGGER.error("FAIL-SAFE: No local model found and retraining disabled for serverless. Exiting.")
                 return
         
@@ -170,11 +177,19 @@ class OmegaAgentController:
                 price = float(row["close"])
                 
                 # Real-time Liquidity Audit
-                liq_metrics = self.liquidity.audit_liquidity(sym)
+                liq_metrics = self.liquidity.analyze_liquidity(sym)
                 
                 # Predict
                 probs = self._predict_latest(df)
-                decision = self.signal_engine.generate_signal(probs, price)
+                # Fixed to use StrategyEngine method
+                atr = float(row.get("atr", price*0.02))
+                decision = self.strategy_engine.from_probabilities(
+                    prob_sell=float(probs[0]),
+                    prob_hold=float(probs[1]),
+                    prob_buy=float(probs[2]),
+                    price=price,
+                    atr=atr
+                )
                 
                 if decision.action != "HOLD":
                     passed_filters = self.alpha_filter.evaluate_signal(decision.action, decision.confidence, row, liq_metrics)
@@ -182,7 +197,7 @@ class OmegaAgentController:
                     if passed_filters:
                         # SUPERVISOR VALIDATION
                         scaler_ratio = self.capital_deployer.get_deployed_capital_ratio(
-                            atr=row.get("atr", price*0.02), price=price, total_trades=1,
+                            atr=atr, price=price, total_trades=1,
                             regime="ST stateless", alpha_health=alpha_health_state
                         )
                         
@@ -210,7 +225,7 @@ class OmegaAgentController:
                     
             LOGGER.info("OMEGA-QUANT: Stateless execution pass complete. Exiting.")
             
-        except Exception as e:
+        except Exception as e: # pylint: disable=broad-exception-caught
             LOGGER.error("FAIL-SAFE: Serverless execution encountered critical error: %s", e)
             # Exit safely without crashing the workflow
 
@@ -256,10 +271,11 @@ class OmegaAgentController:
                     df = histories[sym]
                     row = df.iloc[-1]
                     price = float(row["close"])
+                    atr = float(row.get("atr", price*0.02))
 
                     # Real-time Liquidity Audit
-                    liq_metrics = self.liquidity.audit_liquidity(sym)
-                    liq_void = liq_metrics.get("void", 0.0)
+                    liq_metrics = self.liquidity.analyze_liquidity(sym)
+                    liq_void = liq_metrics.get("liquidity_void", 0.0)
 
                     if self.trader.position:
                         # Mark to Market
@@ -274,14 +290,14 @@ class OmegaAgentController:
                                  "asset": sym, "strategy": "ALPHA", "regime": "ALPHA",
                                  "confidence": 0.5, "direction": "EXIT",
                                  "expected_pnl": 0.01, "pnl": pnl_pct, "outcome": "CLOSED",
-                                 "slippage_pct": liq_metrics.get("slippage_pct", 0.002), "latency_ms": 150.0
+                                 "slippage_pct": 0.002, "latency_ms": 150.0
                              })
                              # PHASE 3: POST-TRADE FORENSICS
                              self.supervisor.post_trade_forensics({
                                  "asset": sym, "pnl": pnl_pct, "exit_reason": "TP/SL/TRAIL",
                                  "slippage": 0.0005 # Simulated slippage
                              })
-                             self.state_manager.save_state({"open": False}, self.trader.equity)
+                             self.state_manager.save_state({"open": False}, self.trader.equity, f"EXIT_{now.timestamp()}")
                              continue
 
                     # Dynamic Regime Classification
@@ -289,7 +305,13 @@ class OmegaAgentController:
                     
                     # Generate Prediction
                     probs = self._predict_latest(df)
-                    decision = self.signal_engine.generate_signal(probs, price)
+                    decision = self.strategy_engine.from_probabilities(
+                        prob_sell=float(probs[0]),
+                        prob_hold=float(probs[1]),
+                        prob_buy=float(probs[2]),
+                        price=price,
+                        atr=atr
+                    )
                     trade_sig = f"{sym}_{now.strftime('%Y%m%d_%H%M')}"
                     
                     if decision.action != "HOLD":
@@ -311,8 +333,8 @@ class OmegaAgentController:
                                 )
                             
                             scaler_ratio = self.capital_deployer.get_deployed_capital_ratio(
-                                atr=row.get("atr", float(row["close"])*0.02),
-                                price=float(row["close"]),
+                                atr=atr,
+                                price=price,
                                 total_trades=self.live_monitor.trade_count_last_hour * 24 + 1,
                                 regime=current_regime,
                                 alpha_health=alpha_health_state
@@ -338,7 +360,7 @@ class OmegaAgentController:
                                     "asset": sym, "strategy": current_regime, "regime": current_regime,
                                     "confidence": decision.confidence, "direction": decision.action,
                                     "expected_pnl": expected_pnl, "pnl": 0.0, "outcome": "OPEN",
-                                    "slippage_pct": liq_metrics.get("slippage_pct", 0.002), "latency_ms": 150.0
+                                    "slippage_pct": 0.002, "latency_ms": 150.0
                                 }
                                 # Execute unless we are in SAFE MODE fallback
                                 if not self.safe_mode_active and not self.supervisor.override_active:
@@ -360,11 +382,6 @@ class OmegaAgentController:
                                 "asset": sym, "reason": "ALPHA_FILTER_BLOCK", "confidence": decision.confidence,
                                 "price": price, "direction": decision.action
                             })
-                            # PHASE 4: EXPLORATION ENGINE DYNAMIC ROUTING
-                            import random
-                            if decision.confidence >= 0.4 and random.random() < 0.10:
-                                LOGGER.info("Ph4 Explorer: Routing small validation trade despite filter block.")
-                                # Minimal capital validation...
                     
                 # Update State Monitor
                 open_pos_count = 1 if self.trader.position else 0

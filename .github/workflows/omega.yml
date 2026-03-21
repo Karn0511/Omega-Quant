@@ -1,6 +1,8 @@
 name: OMEGA-QUANT Serverless Trading Pass
 
 on:
+  push:
+    branches: [ master, main ]
   schedule:
     - cron: '*/5 * * * *' # Every 5 minutes
   workflow_dispatch: # Allow manual triggers

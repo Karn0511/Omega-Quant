@@ -16,12 +16,15 @@ class LiquidityIntelligence:
         """Auto-docstring."""
         try:
             return self.exchange.fetch_order_book(symbol.replace("/", ""), limit)
-        except BaseException: # pylint: disable=broad-exception-caught # pylint: disable=broad-exception-caught
-            # Fallback for standard symbol
+        except Exception as exc:
+            # Fallback for standard symbol or restricted region
+            if "restricted location" in str(exc) or "451" in str(exc):
+                LOGGER.warning("Liquidity Intelligence: Restricted region detected. Skipping order book scan for %s", symbol)
+                return None
             try:
                 return self.exchange.fetch_order_book(symbol, limit)
-            except BaseException as exc: # pylint: disable=broad-exception-caught # pylint: disable=broad-exception-caught
-                LOGGER.error("Liquidity: Failed level2 data for %s: %s", symbol, exc)
+            except Exception as final_exc: # pylint: disable=broad-exception-caught
+                LOGGER.error("Liquidity: Failed level2 data for %s: %s", symbol, final_exc)
                 return None
 
     def analyze_liquidity(self, symbol: str) -> dict:

@@ -60,21 +60,29 @@ class MarketDataFetcher:
         since_ms = int(since.timestamp() * 1000)
 
         all_rows: List[List] = []
-        while True:
-            batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
-            if not batch:
-                break
-            all_rows.extend(batch)
+        try:
+            while True:
+                batch = self.exchange.fetch_ohlcv(symbol, timeframe=self.timeframe, since=since_ms, limit=self.limit)
+                if not batch:
+                    break
+                all_rows.extend(batch)
 
-            last_ts = batch[-1][0]
-            next_since_ms = last_ts + 1
-            if next_since_ms <= since_ms:
-                break
-            since_ms = next_since_ms
+                last_ts = batch[-1][0]
+                next_since_ms = last_ts + 1
+                if next_since_ms <= since_ms:
+                    break
+                since_ms = next_since_ms
 
-            if len(batch) < self.limit:
-                break
-            time.sleep(self.exchange.rateLimit / 1000)
+                if len(batch) < self.limit:
+                    break
+                time.sleep(self.exchange.rateLimit / 1000)
+        except Exception as exc:
+            # Fallback for Restricted Locations (GitHub Actions)
+            if "restricted location" in str(exc) or "451" in str(exc):
+                LOGGER.warning("Restricted region detected! Falling back to yfinance for %s", symbol)
+                ticker = symbol.replace("/", "-").replace("USDT", "USD")
+                return self.fetch_stock_historical(ticker, since_days)
+            raise exc
 
         if not all_rows:
             raise RuntimeError(f"No historical data fetched for {symbol}")

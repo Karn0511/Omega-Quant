@@ -117,11 +117,23 @@ class MarketDataFetcher:
             raise RuntimeError(f"No stock data fetched for {ticker}")
 
         if isinstance(hist.columns, pd.MultiIndex):
+            # Flatten: (Metric, Ticker) -> Metric
             hist.columns = [c[0].lower() for c in hist.columns]
         else:
             hist.columns = [str(c).lower() for c in hist.columns]
 
+        # Final safety: if yfinance gave us duplicate columns or different names
         hist = hist.rename(columns={"adj close": "close"})
+        
+        # Ensure we have a 1D Series for each column
+        for c in ["open", "high", "low", "close", "volume"]:
+            if c in hist.columns:
+                if isinstance(hist[c], pd.DataFrame):
+                    hist[c] = hist[c].iloc[:, 0]
+            else:
+                # If column is missing, try to find it (sometimes its capitalized)
+                pass
+
         needed = ["open", "high", "low", "close", "volume"]
         missing = [c for c in needed if c not in hist.columns]
         if missing:
@@ -130,7 +142,6 @@ class MarketDataFetcher:
         out = hist[needed].copy()
         out["timestamp"] = pd.to_datetime(out.index, utc=True)
         out["symbol"] = ticker
-        out = out[["timestamp", "open", "high", "low", "close", "volume", "symbol"]]
         out = out.reset_index(drop=True)
         return self._clean(out)
 

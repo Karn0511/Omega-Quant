@@ -539,6 +539,18 @@
             "symbol": "ETH/USDT",
             "confidence": 0.18087208305951208,
             "class": "HOLD"
+        },
+        {
+            "timestamp": "2026-03-22T19:42:42.933461",
+            "symbol": "BTC/USDT",
+            "confidence": 0.3268119111657143,
+            "class": "SELL"
+        },
+        {
+            "timestamp": "2026-03-22T19:42:42.976248",
+            "symbol": "ETH/USDT",
+            "confidence": 0.26985003054142,
+            "class": "SELL"
         }
     ],
     "shadow_trades": [
@@ -571,5 +583,5 @@
     "win_rate_map": {},
     "temperature_suggested": 0.85,
     "drift_detected": false,
-    "last_updated": "2026-03-22T19:17:42.009809"
+    "last_updated": "2026-03-22T19:42:42.976795"
 }

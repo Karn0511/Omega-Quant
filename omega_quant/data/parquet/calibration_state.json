@@ -1,18 +1,6 @@
 {
     "confidence_history": [
         {
-            "timestamp": "2026-04-05T11:52:47.884480",
-            "symbol": "BTC/USDT",
-            "confidence": 0.29360595494508746,
-            "class": "SELL"
-        },
-        {
-            "timestamp": "2026-04-05T11:52:47.925914",
-            "symbol": "ETH/USDT",
-            "confidence": 0.22786967717111112,
-            "class": "SELL"
-        },
-        {
             "timestamp": "2026-04-05T12:26:59.284985",
             "symbol": "BTC/USDT",
             "confidence": 0.33785679265856744,
@@ -5999,6 +5987,18 @@
             "symbol": "ETH/USDT",
             "confidence": 0.25447707772254946,
             "class": "SELL"
+        },
+        {
+            "timestamp": "2026-04-29T12:53:55.533465",
+            "symbol": "BTC/USDT",
+            "confidence": 0.2737448692321777,
+            "class": "SELL"
+        },
+        {
+            "timestamp": "2026-04-29T12:53:55.573720",
+            "symbol": "ETH/USDT",
+            "confidence": 0.2672034949064255,
+            "class": "SELL"
         }
     ],
     "shadow_trades": [
@@ -6119,5 +6119,5 @@
     "win_rate_map": {},
     "temperature_suggested": 0.85,
     "drift_detected": false,
-    "last_updated": "2026-04-29T11:12:16.935534"
+    "last_updated": "2026-04-29T12:53:55.574380"
 }
